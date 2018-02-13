@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "yLauncher",
+  "description": "Access links via chrome extension",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon16.png",
+   "default_popup": "popup.html",
+   "default_title": "Click to open"
+  },
+  "icons": { "64": "icon64.png", "128": "icon128.png" },
+  "permissions": [
+   "activeTab",
+   "storage",
+   "bookmarks"
+ ],
+ "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}
